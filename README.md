@@ -12,26 +12,26 @@
     + [Functions To Check Input :](#functions-to-check-input--)
     + [Conversion Functions :](#conversion-functions--)
   * [Using Functions](#using-functions)
-    + [binchecker(n)](#binchecker-n-)
-    + [decchecker(n)](#decchecker-n-)
-    + [octchecker(n)](#octchecker-n-)
-    + [hexchecker(n)](#hexchecker-n-)
-    + [dectobin(x)](#dectobin-x-)
-    + [bintodec(x)](#bintodec-x-)
-    + [dectooct(x)](#dectooct-x-)
-    + [octtobin(x)](#octtobin-x-)
-    + [octtodec(x)](#octtodec-x-)
-    + [bintooct(x)](#bintooct-x-)
-    + [hextobin(x)](#hextobin-x-)
-    + [hextodec(x)](#hextodec-x-)
-    + [hextooct(x)](#hextooct-x-)
-    + [dectohex(x)](#dectohex-x-)
-    + [bintohex(x)](#bintohex-x-)
+    + [binchecker(n)](#binchecker(n))
+    + [decchecker(n)](#decchecker(n))
+    + [octchecker(n)](#octchecker(n))
+    + [hexchecker(n)](#hexchecker(n))
+    + [dectobin(x)](#dectobin(x))
+    + [bintodec(x)](#bintodec(x))
+    + [dectooct(x)](#dectooct(x))
+    + [octtobin(x)](#octtobin(x))
+    + [octtodec(x)](#octtodec(x))
+    + [bintooct(x)](#bintooct(x))
+    + [hextobin(x)](#hextobin(x))
+    + [hextodec(x)](#hextodec(x))
+    + [hextooct(x)](#hextooct(x))
+    + [dectohex(x)](#dectohex(x))
+    + [bintohex(x)](#bintohex(x))
   * [Errors](#errors)
 
 
 ## Installations
-Insall using ```pip```
+Install using ```pip```
 
 ```shell
 pip install numbersystems
@@ -175,7 +175,7 @@ Checks if passed argument is sutiable for Hexadecimal System or not
 ```
  
  ### dectohex(x)
- It Converts Decimal toHexa, takes Decimal value as Parameter, returns Hexadecimal equivalent
+ It Converts Decimal to Hexadecimal, takes Decimal value as Parameter, returns Hexadecimal equivalent
 
  ```python
  >>> hextobin(15)
@@ -184,7 +184,7 @@ Checks if passed argument is sutiable for Hexadecimal System or not
 ```
  
  ### bintohex(x)
- It Converts Binary to Hexadecimal, takes Binary value as Parameter, returns Hexadeciaml equivalent
+ It Converts Binary to Hexadecimal, takes Binary value as Parameter, returns Hexadecimal equivalent
 
  ```python
  >>> bintohex(10101)
@@ -193,8 +193,8 @@ Checks if passed argument is sutiable for Hexadecimal System or not
 ```
 ## Errors
 
-In case of Wrong Type of Data given as an input to the Fuction, **InvalidInputError** is raised.
+In case of the Wrong Type of Data given as an input to the Function, **InvalidInputError** is raised.
 
 It is suggested to check the input value again if the Error is raised.
 
-**If input value to the function is fine, still Error rises, please open a new *Issue* on Github**.
+**If the input value to the function is fine, still Error rises, please open a new *Issue* on Github**.
