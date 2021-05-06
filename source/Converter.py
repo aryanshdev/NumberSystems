@@ -1,3 +1,12 @@
+'''
+Python Module To Quickly Convert One Number System to Another.
+
+Made and Maintained By ARYANSH GUPTA
+
+(c) 2021 Aryansh Gupta, CPL SOFTWARE LABS
+'''
+
+
 global hextob, octtod, btohex
 
 octtod = {'0':'000','1' : '001','2' : '010','3' : '011','4' : '100','5' : '101','6': '110','7' : '111'}
@@ -18,7 +27,8 @@ class InvalidInputError(Exception):
     def __init__(self,message=None):
         __cause__ = message
         
-def binchecker(alpha):
+def binchecker(n):
+    '''Checks if passed argument belongs for Binary System or not'''
     bnchecker = ['0','1']
     for i in range(len(alpha)):
         if alpha[i] in bnchecker:
@@ -26,7 +36,9 @@ def binchecker(alpha):
         else:
             raise InvalidInputError('invalid Binary Number')
             return None
+
 def octchecker(a):
+    '''Checks if passed argument belongs for Octal System or not'''
     occhecker = ['0','1','2','3','4','5','6','7']
     for i in range(len(a)):
         if a[i] in occhecker:
@@ -34,7 +46,9 @@ def octchecker(a):
         else:
             raise InvalidInputError('invalid Octal Number')
             return None
+            
 def decchecker(a):
+    '''Checks if passed argument is sutiable for Decimal System or not'''
     dcchecker = ['1','2','3','4','5','6','7','8','9','0']
     for i in range(len(a)):
         if a[i] in dcchecker:
@@ -44,6 +58,7 @@ def decchecker(a):
             return None
 
 def hexchecker(n):
+    '''Checks if passed argument is sutiable for Hexadecimal System or not'''
     hxchecker = ['1','2','3','4','5','6','7','8','9','0','A','B','C','D',\
                  'E','F','a','b','c','d','e','f']
     for i in range(len(n)):
@@ -90,7 +105,7 @@ def dectooct(n):
     return int(oc[::-1])
 
 def octtobin(n):
-    '''inputs Octadecimal Format, returns Binary Format'''
+    '''inputs Octal Format, returns Binary Format'''
     n = str(n)
     octchecker(n) 
     bin = ''
@@ -99,7 +114,7 @@ def octtobin(n):
     return(int(bin))
 
 def octtodec(n):
-    '''inputs Octadecimal Format, returns Decimal Format'''
+    '''inputs Octal Format, returns Decimal Format'''
     oc = ''
     octchecker(str(n))
     while n > 0:
@@ -108,7 +123,7 @@ def octtodec(n):
     return int(oc[::-1])
 
 def bintooct(n):
-    '''inputs Binary Format, returns Ocradecimal Format'''
+    '''inputs Binary Format, returns Octal Format'''
     return dectooct(bintodec(n))
 
 def hextobin(n):
