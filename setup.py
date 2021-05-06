@@ -10,6 +10,6 @@ setuptools.setup(
     package_dir = {'':'src'},
     long_description = long_description+'<br>Full Documentaion can be found on [ReadTheDocs](https:///VectorsPY.readthedocs.io)',
     long_description_content_type = 'text/markdown',
-    url = 'https://github.com/aryansh-1/numbersystems',
+    url = 'https://github.com/aryanshdev/numbersystems',
     python_requires = '>=3.1',
 )
