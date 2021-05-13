@@ -30,7 +30,7 @@ class InvalidInputError(Exception):
 def binchecker(n):
     '''Checks if passed argument belongs for Binary System or not'''
     bnchecker = ['0','1']
-    for i in range(len(alpha)):
+    for i in range(len(n)):
         if alpha[i] in bnchecker:
             pass
         else:
