@@ -1,0 +1,7 @@
+README.md
+setup.py
+source/converter.py
+source/numbersystems.egg-info/PKG-INFO
+source/numbersystems.egg-info/SOURCES.txt
+source/numbersystems.egg-info/dependency_links.txt
+source/numbersystems.egg-info/top_level.txt

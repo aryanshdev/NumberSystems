@@ -79,19 +79,48 @@ from converter import *
 
 ## Using Functions
 
+> :info: Try entering arguments as *String* only<br>
+
+> ℹ Conversion functions automatically check input arguments, you don't need to check them manually
 
 ### binchecker(n)
-Checks if passed argument is sutiable for Binary System or not
+Checks if passed argument is suitable for Binary System or not
+ ```python
+ >>> binchecker('11011')
+True
+>>> binchecker('213')
+InvalidInputError: invalid Binary Number
+>>>
+ ```
 
 ### decchecker(n)
-Checks if passed argument is sutiable for Decimal System or not
+Checks if passed argument is suitable for Decimal System or not
+ ```python
+ >>> decchecker('75412')
+True
+>>> decchecker('a34b')
+InvalidInputError: invalid Decimal Number
+>>>
+ ```
 
 ### octchecker(n)
-Checks if passed argument is sutiable for Octal System or not
-
+Checks if passed argument is suitable for Octal System or not
+ ```python
+ >>> octchecker('752')
+True
+>>> octhecker('8249')
+InvalidInputError: invalid Octal Number
+>>>
+ ```
 ### hexchecker(n)
-Checks if passed argument is sutiable for Hexadecimal System or not
-
+Checks if passed argument is suitable for Hexadecimal System or not
+ ```python
+ >>> hexchecker('7ac2')
+True
+>>> hexchecker('a34jrt')
+InvalidInputError: invalid Hexadecimal Number
+>>>
+ ```
 
 ### dectobin(x)
  It Converts Decimal to Binary, takes Decimal value as Parameter, returns Binary equivalent
