@@ -1,6 +1,6 @@
 # Number Systems
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://instagram.com/_aryansh.gupta_)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://instagram.com/__aryansh._)
 
 **Python Module To Quickly Convert One Number System to Another.**
 
@@ -79,9 +79,9 @@ from converter import *
 
 ## Using Functions
 
-> :info: Try entering arguments as *String* only<br>
+> :exclamation: Always Try entering arguments as *String* only<br>
 
-> ℹ Conversion functions automatically check input arguments, you don't need to check them manually
+> :exclamation: Conversion functions automatically check input arguments, you don't need to check them manually
 
 ### binchecker(n)
 Checks if passed argument is suitable for Binary System or not
