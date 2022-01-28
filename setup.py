@@ -5,7 +5,7 @@ with open("README.md") as f:
 
 setuptools.setup(
     name = 'numbersystems',
-    version='1.35',
+    version='1.50',
     author = 'Aryansh Gupta',
     author_email = 'Aryanshappmaker@gmail.com',
     description = 'Python Module to convert one Number System to other with ease',

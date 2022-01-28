@@ -29,9 +29,10 @@ class InvalidInputError(Exception):
         
 def binchecker(n):
     '''Checks if passed argument belongs for Binary System or not'''
+    n = str(n)
     bnchecker = ['0','1']
-    for i in range(len(n)):
-        if n[i] in bnchecker:
+    for i in n:
+        if i in bnchecker:
             pass
         else:
             raise InvalidInputError('invalid Binary Number')
@@ -39,36 +40,36 @@ def binchecker(n):
 
 def octchecker(a):
     '''Checks if passed argument belongs for Octal System or not'''
+    a = str(a)
     occhecker = ['0','1','2','3','4','5','6','7']
-    for i in range(len(a)):
-        if a[i] in occhecker:
+    for i in a:
+        if i in occhecker:
             pass
         else:
             raise InvalidInputError('invalid Octal Number')
-            return None
     return True
             
 def decchecker(a):
     '''Checks if passed argument is sutiable for Decimal System or not'''
+    a = str(a)
     dcchecker = ['1','2','3','4','5','6','7','8','9','0']
-    for i in range(len(a)):
-        if a[i] in dcchecker:
+    for i in a:
+        if i in dcchecker:
             pass
         else:
             raise InvalidInputError('invalid Decimal Number')
-            return None
     return True
 
 def hexchecker(n):
     '''Checks if passed argument is sutiable for Hexadecimal System or not'''
+    n = str(n)
     hxchecker = ['1','2','3','4','5','6','7','8','9','0','A','B','C','D',\
                  'E','F','a','b','c','d','e','f']
-    for i in range(len(n)):
-        if n[i] in hxchecker:
+    for i in n:
+        if i in hxchecker:
             pass
         else:
             raise InvalidInputError('invalid Hexadecimal Number')
-            return None
     return True
 
 
@@ -87,11 +88,11 @@ def dectobin(n):
 
 
 def bintodec(n):
-    '''inputs Binary Format, returns Deciaml Format'''
+    '''inputs Binary Format, returns Decimal Format'''
     n = str(n)
     g = n[::-1]
-    n = list(g)
     binchecker(n)
+    n = list(g)
     dec = 0
     for i in range(len(n)):
         dec += int(n[i])*(2**i)
@@ -171,7 +172,7 @@ def bintohex(n):
         except :
             get = n[i:]
         if len(get) != 4:
-                g = get[::-1]
+                g = get[::- 1]
                 t = '0'*(4-len(get))+g
                 get = t[::-1]
         hex += btohex.get(get[::-1])

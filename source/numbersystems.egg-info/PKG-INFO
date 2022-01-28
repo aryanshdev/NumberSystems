@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: numbersystems
-Version: 1.35
+Version: 1.50
 Summary: Python Module to convert one Number System to other with ease
 Home-page: https://github.com/aryanshdev/numbersystems
 Author: Aryansh Gupta
@@ -8,7 +8,7 @@ Author-email: Aryanshappmaker@gmail.com
 License: UNKNOWN
 Description: # Number Systems
         [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-        [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://instagram.com/_aryansh.gupta_)
+        [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://instagram.com/__aryansh._)
         
         **Python Module To Quickly Convert One Number System to Another.**
         
@@ -235,6 +235,7 @@ Description: # Number Systems
         It is suggested to check the input value again if the Error is raised.
         
         **If the input value to the function is fine, still Error rises, please open a new *Issue* on Github**.
+        
 Platform: UNKNOWN
 Requires-Python: >=3.1
 Description-Content-Type: text/markdown
